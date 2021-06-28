@@ -64,15 +64,17 @@ console.log(getLast(['item1', 'item2', 'item3', 'last item']));
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
-function find( value, array ){
-  console.log('in find:');
-  if (value <= array.length){
-    return true;
-  } else {
-    return false;
-  }
-} // end find
-console.log(find(3, ['thing1', 'thing2', 'thing3', 'thing4']));
+
+// STILL NEED TO WRITE THIS AS A LOOP
+// function find( value, array ){
+//   console.log('in find:');
+//   if (value <= array.length){
+//     return true;
+//   } else {
+//     return false;
+//   }
+// } // end find
+// console.log(find(3, ['thing1', 'thing2', 'thing3', 'thing4']));
 
 // ----------------------
 // Stretch Goals
@@ -104,7 +106,12 @@ console.log(sumAll([1, 2, 3, 4, 5, 6]));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-
+let bunchOfNumbers = [-3, 1, 24, -40, 42, -11, 1];
+function allPositive(array) {
+  const positiveArray = array.filter(num => num > -1);
+  return positiveArray;
+}
+console.log(allPositive(bunchOfNumbers));
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
