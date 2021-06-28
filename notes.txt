@@ -1,0 +1,6 @@
+[ ] 4.1. complete missing code for #1-7
+[ ] 4.1. make sure all functions are called
+[ ] 4.1. stretch goal #8
+[ ] 4.1. stretch goal #9
+[ ] 4.1. stretch goal #10
+[ ] 4.1. stretch goal #11 from edabit
