@@ -60,9 +60,11 @@ console.log(getLast(['item1', 'item2', 'item3', 'last item']));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find( value, array ){
-
+  for (let i=0; i <= array.length - 1; i++){
+    return true;
+  }
 }
-
+console.log(find(7, ['thing1', 'thing2', 'thing3', 'thing4']));
 // ----------------------
 // Stretch Goals
 // ----------------------
