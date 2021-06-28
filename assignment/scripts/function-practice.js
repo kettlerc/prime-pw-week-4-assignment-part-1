@@ -65,16 +65,9 @@ console.log(getLast(['item1', 'item2', 'item3', 'last item']));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 
-// STILL NEED TO WRITE THIS AS A LOOP
-// function find( value, array ){
-//   console.log('in find:');
-//   if (value <= array.length){
-//     return true;
-//   } else {
-//     return false;
-//   }
-// } // end find
-// console.log(find(3, ['thing1', 'thing2', 'thing3', 'thing4']));
+function find( value, array ){
+
+} // end find
 
 // ----------------------
 // Stretch Goals
@@ -108,12 +101,27 @@ console.log(sumAll([1, 2, 3, 4, 5, 6]));
 //     return an empty array. Note: The input array should not change.
 let bunchOfNumbers = [-3, 1, 24, -40, 42, -11, 1];
 function allPositive(array) {
+  console.log('in allPositive:');
   const positiveArray = array.filter(num => num > -1);
   return positiveArray;
-}
+} // end allPositive
 console.log(allPositive(bunchOfNumbers));
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+
+// Create a function that takes a number as an argument.
+// Add up all the numbers from 1 to the number you passed to the function.
+// For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+
+function addUp(num) {
+  console.log('in addUp:');
+  let sum = 0;
+  for (let i=0; i <= num; i++){
+    sum += i;
+  }
+  return sum;
+} //end addUp
+console.log(addUp(7));
